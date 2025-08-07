@@ -1,0 +1,166 @@
+:root {
+	/* Primary Color Palette */
+	--color-primary: #1e3a5f;
+	--color-primary-light: #35577d;
+	--color-primary-dark: #162b45;
+	--color-accent: #4dd0e1;
+	--color-accent-light: #80e6ef;
+	--color-accent-dark: #28b3c4;
+	--color-white: #ffffff;
+	--color-light: #f5f7fa;
+	--color-muted: #e0e6ed;
+	--color-dark: #111827;
+	--color-text: #2d3748;
+}
+
+/* 
+* Poppins Font
+*body : arial sans-serif;
+*/
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.top-banner-image {
+	width: 100%;
+	max-width: 900px;
+	margin: 5px auto;
+}
+
+/* Main Navigation */
+.main-nav {
+	background: #1e3a5f;
+	padding: 10px 0;
+}
+
+.main-nav .container {
+	max-width: 1500px;
+}
+
+.navbar-brand {
+	color: #4dd0e1 !important;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 15px 0;
+}
+
+.navbar-brand img {
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+}
+
+.navbar-nav .nav-link {
+	color: white !important;
+	font-size: 13px;
+	font-weight: 500;
+	padding: 18px 15px !important;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.navbar-nav .nav-link:hover {
+	color: #4dd0e1 !important;
+}
+
+.user-actions {
+	color: white;
+	font-size: 11px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+}
+
+.user-actions a {
+	color: white;
+	text-decoration: none;
+	margin: 0 3px;
+}
+
+.user-actions a:hover {
+	color: #4dd0e1;
+}
+
+.social-icons {
+	margin: 0 15px;
+}
+
+.social-icons a {
+	color: white;
+	font-size: 16px;
+	margin: 0 8px;
+	text-decoration: none;
+}
+
+.social-icons a:hover {
+	color: #4dd0e1;
+}
+
+.search-btn {
+	background: #4dd0e1;
+	border: none;
+	color: white;
+	padding: 8px 12px;
+	border-radius: 4px;
+	margin-left: 10px;
+}
+
+.search-btn:hover {
+	background: #26c6da;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+	.top-banner {
+		background: white;
+	}
+
+	.radiance-section,
+	.announcement-section,
+	.phone-section {
+		margin-bottom: 10px;
+	}
+
+	.announcement-section {
+		margin: 10px 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.radiance-section {
+		flex-direction: column;
+		text-align: center;
+		padding: 10px;
+	}
+
+	.appointment-btn {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+
+	.phone-section {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.phone-number {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+
+	.profile-image {
+		width: 60px;
+		height: 60px;
+	}
+
+	.announcement-title {
+		font-size: 20px;
+	}
+
+	.announcement-subtitle {
+		font-size: 14px;
+	}
+}
