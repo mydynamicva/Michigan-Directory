@@ -18,6 +18,225 @@
 *body : arial sans-serif;
 */
 
+.container {
+	max-width: 1500px;
+}
+
+/* Michigan Banner Section - Unique Styles */
+.michigan-banner-section {
+	background: #ffffff;
+	padding: 12px 0;
+	border-bottom: 1px solid #e5e7eb;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.michigan-banner-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	gap: 30px;
+}
+
+.michigan-search-area {
+	display: flex;
+	align-items: center;
+	gap: 0;
+	flex: 1;
+	max-width: 600px;
+}
+
+.michigan-directory-dropdown {
+	background: #f8f9fa;
+	border: 1px solid #d1d5db;
+	border-right: none;
+	padding: 8px 12px;
+	font-size: 14px;
+	color: #374151;
+	border-radius: 4px 0 0 4px;
+	outline: none;
+	min-width: 160px;
+	height: 38px;
+	font-weight: 500;
+}
+
+.michigan-directory-dropdown:focus {
+	border-color: #4dd0e1;
+	box-shadow: 0 0 0 1px #4dd0e1;
+}
+
+.michigan-search-input {
+	flex: 1;
+	border: 1px solid #d1d5db;
+	border-left: none;
+	border-right: none;
+	padding: 8px 15px;
+	font-size: 14px;
+	outline: none;
+	height: 38px;
+}
+
+.michigan-search-input:focus {
+	border-color: #4dd0e1;
+	box-shadow: 0 0 0 1px #4dd0e1;
+}
+
+.michigan-search-input::placeholder {
+	color: #9ca3af;
+}
+
+.michigan-search-button {
+	background: #1e40af;
+	color: white;
+	border: none;
+	padding: 8px 20px;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	border-radius: 0 4px 4px 0;
+	cursor: pointer;
+	height: 38px;
+	min-width: 80px;
+	transition: background-color 0.2s;
+}
+
+.michigan-search-button:hover {
+	background: #1d4ed8;
+}
+
+.michigan-sponsor-area {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	flex-shrink: 0;
+}
+
+.michigan-sponsor-label {
+	font-size: 12px;
+	font-weight: 600;
+	color: #6b7280;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.michigan-sponsor-brand {
+	display: flex;
+	align-items: center;
+}
+
+.michigan-sponsor-logo {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.michigan-logo-icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 4px;
+	object-fit: cover;
+}
+
+.michigan-brand-text {
+	display: flex;
+	flex-direction: column;
+	line-height: 1;
+}
+
+.michigan-company-name {
+	font-size: 16px;
+	font-weight: 700;
+	color: #1f2937;
+	letter-spacing: 1px;
+	margin-bottom: 2px;
+}
+
+.michigan-company-tagline {
+	font-size: 11px;
+	font-weight: 500;
+	color: #6b7280;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.michigan-channel-dropdown {
+	position: relative;
+}
+
+.michigan-channel-button {
+	background: #f3f4f6;
+	border: 1px solid #d1d5db;
+	color: #374151;
+	padding: 8px 16px;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	border-radius: 4px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	height: 38px;
+	transition: all 0.2s;
+}
+
+.michigan-channel-button:hover {
+	background: #e5e7eb;
+	border-color: #9ca3af;
+}
+
+.michigan-channel-button i {
+	font-size: 10px;
+}
+
+/* Responsive Design for Michigan Banner */
+@media (max-width: 992px) {
+	.michigan-banner-container {
+		flex-direction: column;
+		gap: 15px;
+		padding: 15px 20px;
+	}
+
+	.michigan-search-area {
+		width: 100%;
+		max-width: none;
+	}
+
+	.michigan-sponsor-area {
+		width: 100%;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	.michigan-search-area {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.michigan-directory-dropdown,
+	.michigan-search-input,
+	.michigan-search-button {
+		width: 100%;
+		border-radius: 4px;
+		border: 1px solid #d1d5db;
+	}
+
+	.michigan-sponsor-area {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.michigan-sponsor-logo {
+		justify-content: center;
+	}
+}
 
 body {
 	margin: 0;
@@ -35,10 +254,6 @@ body {
 .main-nav {
 	background: #1e3a5f;
 	padding: 10px 0;
-}
-
-.main-nav .container {
-	max-width: 1500px;
 }
 
 .navbar-brand {
@@ -164,3 +379,381 @@ body {
 		font-size: 14px;
 	}
 }
+
+/* ================================= Banner CSS ================================ */
+.banner-container {
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.banner-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #ffffff;
+	padding: 10px 20px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.banner-search-group {
+	display: flex;
+	align-items: center;
+}
+
+.banner-search-group .banner-directory-select,
+.banner-search-group .banner-search-input,
+.banner-search-group .banner-search-button {
+	border: 1px solid #004a99;
+	height: 38px;
+	margin: 0;
+	padding: 0 10px;
+}
+
+.banner-directory-select {
+	border-right: none;
+	background-color: #f8f8f8;
+}
+
+.banner-search-input {
+	border-right: none;
+	border-left: none;
+	width: 250px;
+}
+
+.banner-search-button {
+	background-color: #004a99;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.banner-header-right {
+	display: flex;
+	align-items: center;
+}
+
+.banner-site-sponsor {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+}
+
+.banner-site-sponsor-text {
+	font-size: 12px;
+	color: #666;
+	margin-right: 10px;
+}
+
+.banner-sponsor-logo {
+	font-size: 14px;
+	font-weight: bold;
+	color: #004a99;
+}
+
+.banner-quick-jump {
+	border: 1px solid #ccc;
+	padding: 8px 15px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.banner-main-grid {
+	display: grid;
+	grid-template-columns: 220px 1fr 300px;
+	gap: 20px;
+	margin-top: 20px;
+}
+
+.banner-left-column,
+.banner-center-column,
+.banner-right-column {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.banner-card {
+	background-color: #ffffff;
+	border: 1px solid #e0e0e0;
+	overflow: hidden;
+}
+
+.banner-left-menu .banner-menu-item {
+	display: flex;
+	align-items: center;
+	padding: 12px 15px;
+	border-bottom: 1px solid #f0f0f0;
+	font-size: 14px;
+	color: #333;
+}
+
+.banner-left-menu .banner-menu-item i {
+	margin-right: 10px;
+	color: #004a99;
+}
+
+.banner-left-menu .banner-menu-item:last-child {
+	border-bottom: none;
+}
+/* =================================================================================== */
+.banner-hero-card {
+	position: relative;
+	color: white;
+	height: 400px;
+	overflow: hidden;
+}
+
+.banner-hero-card .banner-card-tag {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background-color: #c82333;
+	padding: 5px 10px;
+	font-size: 12px;
+	font-weight: bold;
+	z-index: 1;
+	border-radius: 3px;
+}
+
+.banner-hero-card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.banner-hero-card .banner-card-caption {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	z-index: 1;
+	max-width: 80%;
+}
+
+.banner-hero-card .banner-card-title {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-hero-card .banner-card-subtitle {
+	font-size: 14px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	margin-top: 5px;
+}
+
+/* Slider Container */
+.news-slider {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* Custom Slick Dots - Horizontal Lines */
+.news-slider .slick-dots {
+	bottom: -40px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex !important;
+	justify-content: center;
+	gap: 8px;
+}
+
+.news-slider .slick-dots li {
+	width: 30px;
+	height: 4px;
+	background: var(--color-muted);
+	border-radius: 2px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.news-slider .slick-dots li button {
+	display: none;
+}
+
+.news-slider .slick-dots li.slick-active {
+	background: var(--color-primary);
+	width: 40px;
+}
+
+.news-slider .slick-dots li:hover {
+	background: var(--color-primary-light);
+}
+
+/* Remove default slick theme dots */
+.slick-dots li button:before {
+	display: none;
+}
+
+/* =================================================================================== */
+.banner-center-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.banner-small-card {
+	position: relative;
+}
+
+.banner-small-card .banner-card-tag {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background-color: #c82333;
+	color: white;
+	padding: 3px 8px;
+	font-size: 10px;
+	font-weight: bold;
+	z-index: 1;
+}
+
+.banner-small-card .banner-marketplace-tag {
+	background-color: #218838;
+}
+
+.banner-small-card .banner-blogs-tag {
+	background-color: #5a2a88;
+}
+
+.banner-small-card .banner-events-tag {
+	background-color: #c82333;
+}
+
+.banner-small-card .banner-auto-guide-tag {
+	background-color: #218838;
+}
+
+.banner-small-card img {
+	width: 100%;
+	height: 120px;
+	object-fit: cover;
+}
+
+.banner-small-card .banner-card-content {
+	padding: 10px;
+}
+
+.banner-small-card .banner-card-title {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+}
+
+.banner-small-card .banner-card-subtitle {
+	font-size: 12px;
+	color: #666;
+}
+
+.banner-video-card .banner-play-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -70%);
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	color: #333;
+}
+
+.banner-ad-card {
+	padding: 20px;
+	text-align: center;
+}
+
+.banner-ad-card .banner-ad-title {
+	font-size: 22px;
+	font-style: italic;
+	color: #666;
+}
+
+.banner-ad-card .banner-ad-brand {
+	font-weight: bold;
+	font-size: 18px;
+	margin: 10px 0;
+}
+
+.banner-ad-card .banner-ad-subtitle {
+	font-size: 12px;
+	color: #888;
+	margin-bottom: 15px;
+}
+
+.banner-ad-card img {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.banner-ad-card .banner-ad-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 15px 0;
+	text-align: left;
+	font-size: 14px;
+}
+
+.banner-ad-card .banner-ad-list li {
+	margin-bottom: 5px;
+}
+
+.banner-ad-card .banner-ad-phone {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.banner-ad-card .banner-ad-action {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.banner-home-show-ad {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+.banner-home-show-ad .banner-free-admission {
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	background-color: #004a99;
+	color: white;
+	padding: 10px 5px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.banner-home-show-ad .banner-ad-content {
+	padding-left: 10px;
+}
+
+.banner-home-show-ad .banner-ad-title {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.banner-home-show-ad .banner-ad-dates {
+	font-size: 14px;
+}
+
+.banner-home-show-ad .banner-ad-location {
+	font-size: 12px;
+	color: #666;
+}
+
+.banner-home-show-ad img {
+	width: 80px;
+	height: auto;
+	margin-left: auto;
+}
+/* ================================= Banner CSS ================================ */

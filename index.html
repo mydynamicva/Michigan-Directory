@@ -7,6 +7,8 @@
     <title>Michigan Directory</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
 </head>
 
@@ -102,7 +104,200 @@
     </header>
 
     <main>
+        <!-- =============================== Banner Section =============================== -->
+            <section class="banner-container container">
+                <header class="banner-header">
+                    <div class="banner-search-group">
+                        <select class="banner-directory-select">
+                            <option>Business Directory</option>
+                        </select>
+                        <input type="text" class="banner-search-input" placeholder="Search Businesses">
+                        <button class="banner-search-button">SEARCH</button>
+                    </div>
+                    <div class="banner-header-right">
+                        <div class="banner-site-sponsor">
+                            <span class="banner-site-sponsor-text">SITE SPONSOR</span>
+                            <div class="banner-sponsor-logo">
+                                HAL WATSON
+                                <div style="font-size: 10px; font-weight: normal;">AIR CONDITIONING CO.</div>
+                            </div>
+                        </div>
+                        <div class="banner-quick-jump">
+                            CHANNEL QUICK JUMP &#9662;
+                        </div>
+                    </div>
+                </header>
+            
+                <main class="banner-main-grid">
+                    <aside class="banner-left-column">
+                        <div class="banner-card banner-left-menu">
+                            <div class="banner-menu-item"><i class="fas fa-briefcase"></i> Business Directory</div>
+                            <div class="banner-menu-item"><i class="fas fa-car"></i> Car Dealership Guide</div>
+                            <div class="banner-menu-item"><i class="fas fa-tags"></i> Classifieds</div>
+                            <div class="banner-menu-item"><i class="fas fa-user-md"></i> Jobs Market</div>
+                            <div class="banner-menu-item"><i class="fas fa-store"></i> Marketplace</div>
+                        </div>
+                    </aside>
+            
+                    <section class="banner-center-column">
+                        <!-- <div class="banner-card banner-hero-card">
+                            <div class="banner-card-tag">NEWS</div>
+                            <img src="https://images.unsplash.com/photo-1544497310-c7bc5c577e20?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Moricon">
+                            <div class="banner-card-caption">
+                                <h2 class="banner-card-title">GET READY FOR MORICON</h2>
+                                <p class="banner-card-subtitle">By: The Woodlands Township</p>
+                            </div>
+                        </div> -->
 
+                        <!-- ============================== Banner News Slider ============================== -->
+                        <div class="slider-container">
+                            <div class="news-slider">
+                                <!-- Slide 1 -->
+                                <div class="banner-hero-card">
+                                    <div class="banner-card-tag">NEWS</div>
+                                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop"
+                                        alt="News Image 1">
+                                    <div class="banner-card-caption">
+                                        <h3 class="banner-card-title">GET READY FOR MORICON</h3>
+                                        <p class="banner-card-subtitle">By: The Woodlands Township</p>
+                                    </div>
+                                </div>
+                        
+                                <!-- Slide 2 -->
+                                <div class="banner-hero-card">
+                                    <div class="banner-card-tag">EVENTS</div>
+                                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&h=400&fit=crop"
+                                        alt="News Image 2">
+                                    <div class="banner-card-caption">
+                                        <h3 class="banner-card-title">COMMUNITY FESTIVAL 2024</h3>
+                                        <p class="banner-card-subtitle">By: Event Organizers</p>
+                                    </div>
+                                </div>
+                        
+                                <!-- Slide 3 -->
+                                <div class="banner-hero-card">
+                                    <div class="banner-card-tag">UPDATES</div>
+                                    <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=400&fit=crop"
+                                        alt="News Image 3">
+                                    <div class="banner-card-caption">
+                                        <h3 class="banner-card-title">TOWNSHIP DEVELOPMENT NEWS</h3>
+                                        <p class="banner-card-subtitle">By: Planning Committee</p>
+                                    </div>
+                                </div>
+                        
+                                <!-- Slide 4 -->
+                                <div class="banner-hero-card">
+                                    <div class="banner-card-tag">ANNOUNCEMENT</div>
+                                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop"
+                                        alt="News Image 4">
+                                    <div class="banner-card-caption">
+                                        <h3 class="banner-card-title">NEW SERVICES AVAILABLE</h3>
+                                        <p class="banner-card-subtitle">By: Service Department</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============================== Banner News Slider ============================== -->
+                        <div class="banner-center-grid">
+                            <div class="banner-card banner-small-card banner-video-card">
+                                <div class="banner-card-tag">VIDEOS</div>
+                                <div class="banner-play-icon"><i class="fas fa-play"></i></div>
+                                <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=2070&auto=format&fit=crop"
+                                    alt="Business Talk">
+                                <div class="banner-card-content">
+                                    <h3 class="banner-card-title">Between The Trees Business Talk - 172 - Chief Campbell | MCHD,
+                                        Leadership and Community</h3>
+                                    <p class="banner-card-subtitle">By: Between The Trees Business Talk</p>
+                                </div>
+                            </div>
+                            <div class="banner-card banner-small-card">
+                                <div class="banner-card-tag">NEWS</div>
+                                <img src="https://images.unsplash.com/photo-1621254887152-aa127535ef99?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="Memorial Bench">
+                                <div class="banner-card-content">
+                                    <h3 class="banner-card-title">St. Luke's Health-The Woodlands Hospital Dedicates Memorial
+                                        Bench Honoring Beloved</h3>
+                                </div>
+                            </div>
+                            <div class="banner-card banner-small-card"
+                                style="background-color: #28a745; color: white; text-align: center; padding: 20px;">
+                                <div class="banner-card-tag banner-marketplace-tag"
+                                    style="top:auto; bottom: 10px; left: 50%; transform: translateX(-50%); background-color: white; color: #333;">
+                                    SPONSORED BY GINA K. GARNER DDS, PC</div>
+                                <h3 class="banner-card-title" style="font-size: 24px;">BACK TO SCHOOL</h3>
+                                <p class="banner-card-subtitle" style="color: white; font-size: 18px;">Guide</p>
+                            </div>
+                            <div class="banner-card banner-small-card">
+                                <div class="banner-card-tag banner-marketplace-tag">MARKETPLACE</div>
+                                <img src="https://images.unsplash.com/photo-1584813470613-5b1c1cad3d69?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="Magnesium Spray">
+                                <div class="banner-card-content">
+                                    <h3 class="banner-card-title">Magnesium Spray</h3>
+                                </div>
+                            </div>
+                            <div class="banner-card banner-small-card">
+                                <div class="banner-card-tag banner-blogs-tag">BLOGS</div>
+                                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop"
+                                    alt="Search Advertising">
+                                <div class="banner-card-content">
+                                    <h3 class="banner-card-title">From Keywords to Conversations: The Future of Search
+                                        Advertising</h3>
+                                    <p class="banner-card-subtitle">By: adWhite</p>
+                                </div>
+                            </div>
+                            <div class="banner-card banner-small-card">
+                                <div class="banner-card-tag banner-events-tag">EVENTS CALENDAR</div>
+                                <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=2070&auto=format&fit=crop"
+                                    alt="MTV">
+                                <div class="banner-card-content">
+                                    <h3 class="banner-card-title">Flashback Friday with The Spicolis</h3>
+                                    <p class="banner-card-subtitle">By: Concerts, Shows & Festivals</p>
+                                </div>
+                            </div>
+                            <div class="banner-card banner-small-card">
+                                <div class="banner-card-tag banner-auto-guide-tag">AUTO GUIDE</div>
+                                <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9e?q=80&w=2070&auto=format&fit=crop"
+                                    alt="Infiniti Q60">
+                                <div class="banner-card-content">
+                                    <h3 class="banner-card-title">2022: INFINITI, Q60, LUXE, 2D Coupe</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+            
+                    <aside class="banner-right-column">
+                        <div class="banner-card banner-ad-card" style="background-color: #f4e9d4;">
+                            <h3 class="banner-ad-title">Relax. Refresh. Renew.</h3>
+                            <div class="banner-ad-brand">THE WOODHOUSE</div>
+                            <p class="banner-ad-subtitle">day spa</p>
+                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1887&auto=format&fit=crop"
+                                alt="Spa">
+                            <ul class="banner-ad-list">
+                                <li>• skin care</li>
+                                <li>• massage therapy</li>
+                                <li>• sleep treatments</li>
+                                <li>• body treatments</li>
+                                <li>• nail treatments</li>
+                                <li>• packages</li>
+                            </ul>
+                            <div class="banner-ad-phone">CALL (832) 920-5371</div>
+                            <div class="banner-ad-action">TO MAKE A RESERVATION</div>
+                        </div>
+                        <div class="banner-card banner-home-show-ad">
+                            <div class="banner-free-admission">FREE ADMISSION</div>
+                            <div class="banner-ad-content">
+                                <div class="banner-ad-title">Montgomery County Home & Outdoor Living SHOW</div>
+                                <div class="banner-ad-dates">September 6&7</div>
+                                <div class="banner-ad-location">The Lone Star Convention Center, Conroe</div>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1974&auto=format&fit=crop"
+                                alt="Outdoor Living">
+                        </div>
+                    </aside>
+                </main>
+            </section>
+        <!-- =============================== Banner Section =============================== -->
     </main>
 
     <footer>
@@ -111,7 +306,35 @@
     </footer>
 
     <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.news-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                arrows: false,
+                fade: true,
+                cssEase: 'linear',
+                pauseOnHover: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            fade: false,
+                            cssEase: 'ease'
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
 </body>
 
 </html>
